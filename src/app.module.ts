@@ -12,7 +12,7 @@ import { FavoritePlaceModule } from './favorite-place/favorite-place.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/nest'),
+    MongooseModule.forRoot(`mongodb://mongodb:27017/nest`),
     ConfigModule.forRoot(),
     WeatherModule,
     FavoritePlaceModule,
